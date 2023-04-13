@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  <title>Ex Prova</title>
+</head>
+
+<body>
+
+  <section id="container">
+    <header class="conteudo-header">
+      <div class="titulo-header">
+        <h3>Formulário
+          para compra de <strong>Pacote de Stickers</strong></h3>
+      </div>
+    </header>
+
+    <div class="area-principal">
+      <form>
+        <div class="checkbox-area">
+          <div class="checkbox-container">
+            <h4>Quais Stickers?</h4>
+            <div class="itens-checkbox">
+              <input type="checkbox" name="checkbox" class="checkbox">
+              <span>React</span>
+            </div>
+            <div class="itens-checkbox">
+              <input type="checkbox" name="checkbox" class="checkbox">
+              <span>Vue</span>
+            </div>
+            <div class="itens-checkbox">
+              <input type="checkbox" name="checkbox" class="checkbox">
+              <span>Angular</span>
+            </div>
+          </div>
+        </div>
+        <div class="area-contador">
+          <h4>Quantos Stickers de cada?</h4>
+          <div class="controle-contador">
+            <button class="controle-operacao" type="button">-</button>
+            <input type="number" class="contador-sticker" value="0">
+            <button class="controle-operacao" type="button">+</button>
+          </div>
+        </div>
+        <div class="area-observacao">
+          <h4>Observações:</h4>
+          <textarea class="text-area" rows="4" cols="50"></textarea>
+        </div>
+        <div class="area-envio">
+          <div class="enviar-mensagem">
+            <p class="texto-mensagem hidden">Formulário enviado com sucesso!</p>
+          </div>
+          <button class="button-submit" type="button" disabled>ENVIAR</button>
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

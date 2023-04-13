@@ -1,0 +1,141 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  background-color: #663399;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  width: 600px;
+  background-color: #F2F2F2;
+}
+
+#container .conteudo-header {
+  background-color: #2F3676;
+  padding: 30px;
+}
+
+#container .conteudo-header h3 {
+  color: #FFFFFF;
+  font-weight: 100;
+}
+
+#container .area-principal .checkbox-area,
+#container .area-principal .area-contador,
+#container .area-principal .area-observacao {
+  margin: 30px;
+}
+
+#container .area-principal .checkbox-area h4,
+#container .area-principal .area-contador h4,
+#container .area-principal .area-observacao h4 {
+  margin-bottom: 15px;
+}
+
+#container .area-principal .checkbox-area .itens-checkbox {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#container .area-principal .checkbox-area .itens-checkbox .checkbox {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background-color: #2F3676;
+  border-radius: 4px;
+  transition: 0.1s;
+}
+
+#container .area-principal .checkbox-area .itens-checkbox .checkbox:checked::after {
+  content: "\2713";
+  position: relative;
+  left: 6px;
+  top: 1px;
+  width: 9px;
+  height: 9px;
+  color: #FFFFFF;
+}
+
+#container .area-principal .area-contador .controle-contador {
+  display: flex;
+  align-items: center;
+}
+
+#container .area-principal .area-contador .controle-contador .controle-operacao {
+  background-color: #2F3676;
+  border: none;
+  border-radius: 4px;
+  width: 42px;
+  height: 42px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  display: inline-grid;
+}
+
+#container .area-principal .area-contador .controle-contador .contador-sticker {
+  background-color: #DDE3E9;
+  border: 1px solid #2F3676;
+  width: 60px;
+  height: 38px;
+  margin: 0 4px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+#container .area-principal .area-observacao .text-area {
+  resize: none;
+  width: 496px;
+  height: 141px;
+  background-color: #DDE3E9;
+  border: 1px solid #2F3676;
+  padding: 20px;
+}
+
+#container .area-envio {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DDE3E9;
+}
+
+#container .area-envio .enviar-mensagem .texto-mensagem {
+  color: #00C57C;
+  font-weight: 400;
+}
+
+#container .area-envio .enviar-mensagem .hidden {
+  display: none;
+}
+
+#container .area-envio .button-submit {
+  width: 100px;
+  height: 25px;
+  background-color: #2F3676;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+}
+
+#container .area-envio .button-submit:hover {
+  background-color: #191847;
+}
+
+#container .area-envio .button-submit:disabled {
+  background-color: #C5CFD6;
+  color: #555555;
+}
